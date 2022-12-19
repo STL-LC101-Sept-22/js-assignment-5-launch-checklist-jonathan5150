@@ -21,10 +21,10 @@ function validateInput(testInput) {
     if (userInput === "") {
         return "Empty";
     }
-    else if (userInput === NaN) {
+    else if (isNaN(userInput)) {
         return "Not a Number";
     }
-    else if (userInput !== NaN) { //? 
+    else if (isNaN(userInput) === false) { 
         return "Is a Number";
     }
 }
