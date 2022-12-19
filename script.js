@@ -1,12 +1,12 @@
 // Write your JavaScript code here!
 
-const { addDestinationInfo, formSubmission } = require("./scriptHelper");
+//const { addDestinationInfo, formSubmission } = require("./scriptHelper");
 
 window.addEventListener("load", function() {
 
    let listedPlanets;
    // Set listedPlanetsResponse equal to the value returned by calling myFetch()
-   let listedPlanetResponse = myFetch();
+   let listedPlanetsResponse = myFetch();
 
    listedPlanetsResponse.then(function (result) {
        listedPlanets = result;
@@ -39,6 +39,6 @@ window.addEventListener("load", function() {
     formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel);
 
 
-   })
+   });
    
 });
